@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <time.h>
 
 int main()
@@ -9,7 +9,7 @@ int main()
     int Today = buf.tm_mday;
     const int SIZE = 5;
     int MyArray[SIZE][SIZE];
-    int TargetRow = Today / SIZE;
+    int TargetRow = Today % SIZE;
     int sum = 0;
 
     for (int i = 0; i < SIZE; i++)
